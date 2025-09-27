@@ -1,1 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+.toolbar-right a:hover,
+.toolbar-right a:focus {
+  color: #00ff00;
+  text-decoration: underline;
+}
