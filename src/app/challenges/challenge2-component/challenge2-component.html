@@ -1,0 +1,63 @@
+<div class="demo-container">
+  <h1>Card Component Demo</h1>
+
+  <div class="card-grid">
+    <!-- Basic Card -->
+    <app-card-component title="Basic Card" subtitle="A simple card with just a title">
+      <div body>
+        <p>This is the body content of the card. You can put any HTML content here.</p>
+      </div>
+    </app-card-component>
+
+    <!-- Card with Icon -->
+    <app-card-component
+      title="Card with Icon"
+      subtitle="Featuring a material icon"
+      icon="material-icons"
+    >
+      <div body>
+        <p>This card has an icon in the header. Icons can be from any icon library, like Material Icons, Font Awesome, etc.</p>
+      </div>
+    </app-card-component>
+
+    <!-- Card with Footer -->
+    <app-card-component
+      title="Card with Footer"
+      subtitle="Includes a footer section"
+      [showFooter]="true"
+    >
+      <div body>
+        <p>This card has a footer section below the main content.</p>
+        <p>You can add multiple paragraphs or any other HTML elements in the body.</p>
+      </div>
+      <div footer>
+        <button class="btn btn-primary">Action 1</button>
+        <button class="btn btn-secondary">Action 2</button>
+      </div>
+    </app-card-component>
+
+    <!-- Complete Card Example -->
+    <app-card-component
+      title="Complete Example"
+      subtitle="With all features"
+      icon="material-icons"
+      [showFooter]="true"
+    >
+      <div body>
+        <h4>Card Features:</h4>
+        <ul>
+          <li>Customizable title and subtitle</li>
+          <li>Optional icon in the header</li>
+          <li>Flexible body content</li>
+          <li>Optional footer section</li>
+          <li>Hover effects</li>
+          <li>Fully responsive</li>
+        </ul>
+      </div>
+      <div footer>
+        <button class="btn btn-primary">Save</button>
+        <button class="btn">Cancel</button>
+      </div>
+    </app-card-component>
+  </div>
+</div>
